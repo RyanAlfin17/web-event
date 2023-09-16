@@ -45,10 +45,18 @@
                 style="padding-inline: 200px">
                 <img style="z-index: 0; height: 600px" src="img/test.jpg" class="d-block w-100 rounded" alt="...">
                 <form action=""
-                    class="position-absolute bottom-0 rounded d-flex align-items-center gap-5 px-5 py-3"
-                    style="background-color: red; width:1000px;">
+                    class="position-absolute bottom-0 rounded d-flex align-items-center gap-5 px-5 py-3 text-light"
+                    style="background-color: rgb(29, 29, 29); width:1000px;">
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-semibold">Disabled select menu</label>
+                        <label for="disabledSelect" class="form-label m-0 fw-medium">Location</label>
+                        <select id="disabledSelect" class="form-select fw-semibold">
+                            <option>Surabaya</option>
+                            <option>Sidoarjo</option>
+                            <option>Bogor</option>
+                        </select>
+                    </div>
+                    <div class="w-25">
+                        <label for="disabledSelect" class="form-label m-0 fw-medium">Disabled select menu</label>
                         <select id="disabledSelect" class="form-select fw-semibold">
                             <option>Disabled select</option>
                         </select>
@@ -59,13 +67,7 @@
                             <option>Disabled select</option>
                         </select>
                     </div>
-                    <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-semibold">Disabled select menu</label>
-                        <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Disabled select</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-25 py-3 mt-2 fw-semibold">Submit</button>
+                    <button type="submit" class="btn btn-primary w-25 py-3 mt-2 fw-medium">Submit</button>
                 </form>
             </div>
         </div>
@@ -76,35 +78,56 @@
         <h1 class="fw-bold py-2">Popular Event</h1>
 
         <div class="d-flex justify-content-between flex-wrap gap-4">
-            <a class="card" href="#" style="width: 18rem;">
+            <a class="card" href="#" style="width: 22rem;">
                 <img src="img/usman.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </a>
-            <a class="card" href="#" style="width: 18rem;">
+            <a class="card" href="#" style="width: 22rem;">
                 <img src="img/usman.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </a>
-            <a class="card" href="#" style="width: 18rem;">
+            <a class="card" href="#" style="width: 22rem;">
                 <img src="img/usman.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </a>
-            <a class="card" href="#" style="width: 18rem;">
+            <a class="card" href="#" style="width: 22rem;">
                 <img src="img/usman.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </a>
-            <a class="card" href="#" style="width: 18rem;">
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
                 <img src="img/usman.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -112,6 +135,121 @@
                 </div>
             </a>
         </div>
+    </div>
+
+    {{-- isi 2 --}}
+    <div class="py-5" style="padding-inline: 200px">
+        <h1 class="fw-bold py-2">Upcoming Event</h1>
+
+        <div class="d-flex justify-content-between flex-wrap gap-4">
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+            <a class="card" href="#" style="width: 22rem;">
+                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    {{-- footer --}}
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-muted">© 2022</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
