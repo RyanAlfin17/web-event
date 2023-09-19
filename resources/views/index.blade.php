@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -56,9 +56,10 @@
                         </select>
                     </div>
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-medium">Disabled select menu</label>
+                        <label for="disabledSelect" class="form-label m-0 fw-medium">Price</label>
                         <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Disabled select</option>
+                            <option>Paid</option>
+                            <option>Free</option>
                         </select>
                     </div>
                     <div class="w-25">
