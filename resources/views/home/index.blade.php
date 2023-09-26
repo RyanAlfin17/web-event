@@ -63,9 +63,11 @@
                         </select>
                     </div>
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-semibold">Disabled select menu</label>
+                        <label for="disabledSelect" class="form-label m-0 fw-semibold">Type</label>
                         <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Disabled select</option>
+                            <option>Cosplay</option>
+                            <option>Concert</option>
+                            <option>Kerja Bakti</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary w-25 py-3 mt-2 fw-medium">Submit</button>
@@ -211,7 +213,7 @@
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-                <p class="text-muted">© 2022</p>
+                <p class="text-muted">Orchari © 2023</p>
             </div>
 
             <div class="col mb-3">
