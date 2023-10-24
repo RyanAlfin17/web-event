@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="#">Service</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="{{ route('kota.index') }}">backend</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,26 +51,30 @@
                     class="position-absolute bottom-0 rounded d-flex align-items-center gap-5 px-5 py-3 text-light"
                     style="background-color: rgb(29, 29, 29); width:1000px;">
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-medium">Location</label>
-                        <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Surabaya</option>
-                            <option>Sidoarjo</option>
-                            <option>Bogor</option>
+                        <label for="kotaSelect" class="form-label m-0 fw-medium">Location</label>
+                        <select id="kotaSelect" class="form-select fw-semibold">
+                            <option selected>pilih</option>
+                            @foreach ($kota as $item)
+                                <option value="{{ $item->id }}">{{ $item->nm_kota }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-medium">Price</label>
-                        <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Paid</option>
-                            <option>Free</option>
+                        <label for="priceSelect" class="form-label m-0 fw-medium">Price</label>
+                        <select id="priceSelect" class="form-select fw-semibold">
+                            <option selected>pilih</option>
+                            @foreach ($price as $item)
+                                <option value="{{ $item->id }}">{{ $item->price }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="w-25">
-                        <label for="disabledSelect" class="form-label m-0 fw-semibold">Type</label>
-                        <select id="disabledSelect" class="form-select fw-semibold">
-                            <option>Cosplay</option>
-                            <option>Concert</option>
-                            <option>Kerja Bakti</option>
+                        <label for="priceSelect" class="form-label m-0 fw-semibold">Type</label>
+                        <select id="priceSelect" class="form-select fw-semibold">
+                            <option selected>pilih</option>
+                            @foreach ($type as $item)
+                                <option value="{{ $item->id }}">{{ $item->type }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary w-25 py-3 mt-2 fw-medium">Submit</button>
@@ -81,62 +88,22 @@
         <h1 class="fw-bold py-2">Popular Event</h1>
 
         <div class="d-flex justify-content-between flex-wrap gap-4">
+            <div id="eventList">
+            @foreach ($data as $event)
             <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
+                <img src="{{ $event->image }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <div><strong>{{ $event->nm_event }}</strong></div>
+                    <p class="card-text">{{ $event->detail }}</p>
+                    <div class="d-flex text-info fw-bold">
+                        <p class="card-text">{{ $event->kota->nm_kota }}</p>, 
+                        <p class="card-text">{{ $event->price->price }}</p>, 
+                        <p class="card-text">{{ $event->type->type }}</p>, 
+                    </div>
                 </div>
             </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
-            <a class="card" href="#" style="width: 22rem;">
-                <img src="img/usman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </a>
+            @endforeach
+            </div>
         </div>
     </div>
 
@@ -257,6 +224,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
         crossorigin="anonymous"></script>
+        
+
 </body>
 
 </html>
