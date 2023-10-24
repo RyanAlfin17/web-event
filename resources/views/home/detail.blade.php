@@ -10,9 +10,9 @@
     <title>Detail Event</title>
 </head>
 
-<body>
+<body style="background-color: #EEEEEE">
     {{-- NAVBAR --}}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100" style="z-index: 100">
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 p-0 border-bottom" style="z-index: 9999; background-color: #EEEEEE">
         <div class="container-fluid px-5 py-4">
             <a class="navbar-brand fw-bold" href="#">Orchari</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link fw-semibold" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#">Event</a>
+                        <a class="nav-link active fw-semibold" href="#">Event</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="#">Service</a>
@@ -36,19 +36,72 @@
     </nav>
 
     {{-- card --}}
-    <div class="card mb-3 carousel-item active py-5 d-flex justify-content-center align-items-center position-relative"
-        style="padding-inline: 200px" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="img/usman.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+    <div class="card mb-2 carousel-item rounded-0 border-0 bg-transparent active py-5 d-flex position-relative"
+        style="padding-inline: 6vw; margin-top: 104px;">
+        <div class="col g-0">
+            <div class="card-header bg-transparent px-0 mb-4 pb-3">
+                <h3 class="card-title" style="font-weight: 700">Event Cosplay</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <div class="row g-0 rounded bg-white mb-5">
+            <div class="col-md-8 overflow-hidden" style="max-height: 300px">
+                <img src="img/usman.jpg" class="img-fluid h-100 w-100" alt="...">
+            </div>
+
+            <div class="card-body col-md-4 row p-4">
+                <div class="col-6">
+                    <p class="card-text m-0">Date</p>
+                    <h6 class="card-title">July 27, 2025</h6>
                 </div>
+                <div class="col-6">
+                    <p class="card-text m-0">Time</p>
+                    <h6 class="card-title">12.00 - 14.00</h6>
+                </div>
+                <div class="col-6">
+                    <p class="card-text m-0">Type</p>
+                    <h6 class="card-title">Guild Raid</h6>
+                </div>
+                <div class="col-6">
+                    <p class="card-text m-0">Location</p>
+                    <h6 class="card-title">Surabaya</h6>
+                </div>
+                <div class="col-12">
+                    <p class="card-text m-0">Price</p>
+                    <h6 class="card-title">IDR. 27.000</h6>
+                </div>
+                <button type="button" class="btn btn-info text-white" style="font-weight: 600">Share</button>
+            </div>
+
+        </div>
+
+        <div class="col g-0">
+            <div class="card-body bg-transparent px-0 mb-5 pb-3">
+                <h3 class="card-title" style="font-weight: 700">About Event</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
+                        in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+                        mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo,
+                        non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
+                        amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+                        vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem
+                        orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra.
+                        Fusce vel tempor elit. Proin tempus,.</p>
+            </div>
+        </div>
+
+        <div class="col g-0">
+            <div class="card-body bg-transparent px-0 mb-5 pb-3">
+                <h3 class="card-title" style="font-weight: 700">Topic Covered</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
+                        in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+                        mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo,
+                        non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
+                        amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+                        vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem
+                        orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra.
+                        Fusce vel tempor elit. Proin tempus,.</p>
             </div>
         </div>
     </div>

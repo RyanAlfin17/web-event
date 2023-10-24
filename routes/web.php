@@ -15,7 +15,8 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/', [IndexController::class, 'index'])->name('home.index');
+Route::get('/detail', [IndexController::class, 'detail'])->name('home.detail');
 
 // login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
